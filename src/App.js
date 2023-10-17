@@ -59,7 +59,7 @@ function App() {
       <div style={{ display: "flex", flexDirection: "row", width: "100%" }}>
         {/* <Body /> */}
         <Routes>
-          <Route path="/" element={<TextForm heading="Textutils" />} />
+          <Route path="/" element={<TextForm heading="TextUtils" />} />
           <Route path="about" element={<About />} />
         </Routes>
         {/* <Sidebar /> */}
