@@ -1,0 +1,9 @@
+.hello {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    background-color: #e3e3e3;
+    font-size: 20px;
+    padding: 12px 0;
+}

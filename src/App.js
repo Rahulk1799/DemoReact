@@ -1,7 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Navbar from "./components/Navbars";
+import Footer from "./components/Footer";
+import Body from "./components/Body";
+import Sidebar from "./components/Sidebar";
+import TextForm from "./components/Body/TextForm";
+import About from "./components/Body/About";
+import { Routes, Route } from "react-router-dom";
 
-let name = "Rahul Kumar";
+//let name = "Rahul Kumar";
 function App() {
   return (
     /*
@@ -46,49 +53,19 @@ function App() {
       </div> */
     // </>
 
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          ReactApp
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
-                Homes
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-                About
-              </a>
-            </li>
-          </ul>
-          <form className="d-flex">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
+    <>
+      {/* <Navbar title="ReactJs" about="About Us" /> */}
+      <Navbar logoUrl="/download.png" />
+      <div style={{ display: "flex", flexDirection: "row", width: "100%" }}>
+        {/* <Body /> */}
+        <Routes>
+          <Route path="/" element={<TextForm heading="Textutils" />} />
+          <Route path="about" element={<About />} />
+        </Routes>
+        {/* <Sidebar /> */}
       </div>
-    </nav>
+      <Footer />
+    </>
   );
 }
 
