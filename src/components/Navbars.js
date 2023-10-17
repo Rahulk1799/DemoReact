@@ -14,7 +14,7 @@ export default function Navbar(props) {
       <div className="container-fluid">
         {/* <a className="navbar-brand" href="/"> */}
         <Link to={"/"} className="navbar-brand" style={{ margin: "0px 8px" }}>
-          <img src={props.logoUrl} style={{ width: "35px" }} />
+          <img src={props.logoUrl} style={{ width: "35px" }} alt="ReactApp" />
           {/* {props.title} */}
         </Link>
         {/* </a> */}

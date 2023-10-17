@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 export default function TextForm(props) {
   //State and hooks..
@@ -47,10 +47,10 @@ export default function TextForm(props) {
           onChange={handleOnChange}
         ></textarea>
       </div>
-      <button className="btn btn-primary mx-3" onClick={handleOnClick1}>
+      <button className="btn btn-primary m-1" onClick={handleOnClick1}>
         Convert to UpperCase
       </button>
-      <button className="btn btn-primary" onClick={handleOnClick2}>
+      <button className="btn btn-primary m-1" onClick={handleOnClick2}>
         Convert to LowerCase
       </button>
     </div>

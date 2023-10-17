@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+//import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbars";
 import Footer from "./components/Footer";
@@ -55,7 +55,7 @@ function App() {
 
     <>
       {/* <Navbar title="ReactJs" about="About Us" /> */}
-      <Navbar logoUrl="/download.png" />
+      <Navbar logoUrl="/download.png" about="AboutUs" />
       <div style={{ display: "flex", flexDirection: "row", width: "100%" }}>
         {/* <Body /> */}
         <Routes>
