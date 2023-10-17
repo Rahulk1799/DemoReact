@@ -55,7 +55,7 @@ function App() {
 
     <>
       {/* <Navbar title="ReactJs" about="About Us" /> */}
-      <Navbar logoUrl="/download.png" about="AboutUs" />
+      <Navbar logoUrl="/logoReact.png" about="AboutUs" />
       <div style={{ display: "flex", flexDirection: "row", width: "100%" }}>
         {/* <Body /> */}
         <Routes>

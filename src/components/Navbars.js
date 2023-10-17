@@ -10,7 +10,7 @@ export default function Navbar(props) {
   }
   return (
     //   <div>Hello this is New line...</div>;
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         {/* <a className="navbar-brand" href="/"> */}
         <Link to={"/"} className="navbar-brand" style={{ margin: "0px 8px" }}>
@@ -55,7 +55,7 @@ export default function Navbar(props) {
               onChange={handle}
               value={data}
             />
-            <button className="btn btn-outline-success" type="submit">
+            <button className="btn btn-primary" type="submit">
               Search
             </button>
           </form>
