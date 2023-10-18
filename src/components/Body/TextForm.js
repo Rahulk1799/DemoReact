@@ -36,8 +36,9 @@ export default function TextForm(props) {
         width: "85%",
         padding: "15px",
         // textAlign: "center",
-        backgroundColor: props.theme ? "#212529" : "#80808014",
+        backgroundColor: props.theme ? "#212529" : "rgb(255 0 0 / 8%)",
         color: props.theme ? "white" : "#212529",
+        boxShadow: "rgb(136, 136, 136) 4px 7px 18px 3px",
       }}
     >
       <div className="mb-3">
