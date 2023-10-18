@@ -36,7 +36,8 @@ export default function TextForm(props) {
         width: "85%",
         padding: "15px",
         // textAlign: "center",
-        backgroundColor: "#80808014",
+        backgroundColor: props.theme ? "#212529" : "#80808014",
+        color: props.theme ? "white" : "#212529",
       }}
     >
       <div className="mb-3">
@@ -49,6 +50,10 @@ export default function TextForm(props) {
           rows="5"
           value={data}
           onChange={handleOnChange}
+          style={{
+            backgroundColor: props.theme ? "rgb(218, 230, 221)" : "white",
+            color: props.theme ? "black" : "#212529",
+          }}
         ></textarea>
       </div>
       <button className="btn btn-primary m-1" onClick={handleOnClick1}>

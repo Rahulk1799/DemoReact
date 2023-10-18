@@ -7,9 +7,12 @@ import Footer from "./components/Footer";
 import TextForm from "./components/Body/TextForm";
 import About from "./components/Body/About";
 import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 //let name = "Rahul Kumar";
 function App() {
+  //Creating the hooks to set the theme..
+  const [theme, setTheme] = useState(false);
   return (
     /*
     Note :- a).We can return only one Element tag. In this case div element..
@@ -55,12 +58,20 @@ function App() {
 
     <>
       {/* <Navbar title="ReactJs" about="About Us" /> */}
-      <Navbar logoUrl="/logoReact.png" about="AboutUs" />
+      <Navbar
+        logoUrl="/logoReact.png"
+        about="AboutUs"
+        theme={theme}
+        setTheme={setTheme}
+      />
       <div style={{ display: "flex", flexDirection: "row", width: "100%" }}>
         {/* <Body /> */}
         <Routes>
-          <Route path="/" element={<TextForm heading="TextUtils" />} />
-          <Route path="about" element={<About />} />
+          <Route
+            path="/"
+            element={<TextForm heading="TextUtils" theme={theme} />}
+          />
+          <Route path="about" element={<About theme={theme} />} />
         </Routes>
         {/* <Sidebar /> */}
       </div>

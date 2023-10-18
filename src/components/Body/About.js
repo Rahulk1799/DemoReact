@@ -1,9 +1,14 @@
 import React from "react";
 
-export default function About() {
+export default function About(props) {
   return (
     <div
-      style={{ backgroundColor: "#80808014", height: "50vh", width: "80vh" }}
+      style={{
+        backgroundColor: props.theme ? "#212529" : "#80808014",
+        height: "50vh",
+        width: "80vh",
+        color: props.theme ? "white" : "#212529",
+      }}
       className="m-4 mt-2 p-3"
     >
       <h4>About TextUtils</h4>

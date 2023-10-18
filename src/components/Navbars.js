@@ -8,6 +8,9 @@ export default function Navbar(props) {
     setData(e.target.value);
     console.log(data);
   }
+  const toggleTheme = () => {
+    props.setTheme(!props.theme);
+  };
   return (
     //   <div>Hello this is New line...</div>;
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -58,6 +61,20 @@ export default function Navbar(props) {
             <button className="btn btn-primary" type="submit">
               Search
             </button>
+            {/* Setting the theme to the dark mode or the light mode.. */}
+            <div
+              className="form-check form-switch"
+              style={{ margin: "10px 10px", color: "white" }}
+            >
+              <input
+                className="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckChecked"
+                onChange={toggleTheme}
+              />
+              Theme
+            </div>
           </form>
         </div>
       </div>
